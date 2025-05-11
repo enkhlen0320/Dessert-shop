@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>exercise5</title>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: 100px 100px 100px 100px 100px 100px;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: rgb(247, 186, 243);
+    }
+
+    @media (max-width: 900px) {
+      .grid-container {
+        grid-template-columns: 100px 100px 100px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .grid-container {
+        grid-template-columns: 100px 100px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .grid-container {
+        grid-template-columns: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+</body>
+</html>
