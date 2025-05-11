@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>exersice2</title>
+  <style>
+    .container {
+      display: flex;
+      gap: 20px;
+    }
+
+    .box {
+      width: 300px;
+      height: 300px;
+    }
+
+    .red {
+      background-color: red;
+    }
+
+    .blue {
+      background-color: blue;
+    }
+
+    @media (min-width: 500px) {
+      .red {
+        background-color: blue;
+      }
+      .blue {
+        background-color: red;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box red"></div>
+    <div class="box blue"></div>
+  </div>
+</body>
+</html>
